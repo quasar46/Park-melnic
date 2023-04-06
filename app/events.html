@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/fonts/stylesheet.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- шапка-->
+      <header class="header">
+        <div class="header-top">
+          <div class="header-top__wrapper _container"><a class="header-top__item header-top__location" href="#"><img src="images/dest/vector/near_me.svg" alt="Местоположение"><span>Курская область, Пристенский район, село Красниково</span></a>
+            <div class="header-top__item header-top__phone"><a href="tel:+79991234567"><img src="images/dest/vector/phonelink_ring.svg" alt="Сделать звонок"><span>+7 999 123 45 67</span></a></div>
+            <div class="header-top__item header-top__visible"><img src="images/dest/vector/visibility.svg" alt=""></div>
+            <button class="header-top__item header-top__language"><img src="images/dest/vector/language.svg" alt="Выбор языка"><span>RU</span></button>
+          </div>
+        </div>
+        <div class="header-menu">
+          <div class="header-menu__wrapper _container"><a class="logo" href="/"><img src="images/dest/vector/logo.svg" alt=""></a>
+            <!-- меню в шапке-->
+            <div class="top_menu">
+              <ul class="main-nav">
+                <li class="item"><a href="o-complekse.html"><span>О комплексе</span></a></li>
+                <li class="item"><a><span>Локации</span><img src="images/dest/vector/arrow_drop_down.svg" alt=""></a>
+                  <div class="main-nav__submenu-wrapper">
+                    <div class="main-nav__submenu"><a href="alleya-melnic.html">Аллея мельниц</a><a href="etnograficheskiy-park.html">Этнографический парк</a><a href="otdyh-vsey-semyey.html">Отдых всей семьи</a></div>
+                  </div>
+                </li>
+                <li class="item"><a href="contacts.html"><span>Контакты</span></a></li>
+                <li class="item"><a href="carta-putishestviy.html"><span>Карта путешествий</span></a></li>
+                <li class="item"><a href="events.html"><span>Мероприятия</span></a></li>
+                <li class="item"><a href="news.html"><span>Новости</span></a></li>
+                <li class="item"><a href="#"><span>Интернет-магазин</span></a></li>
+                <li class="dd_menu">
+                  <button class="dropdown-toggle" type="button">ещё</button>
+                  <div class="main-nav__submenu-wrapper">
+                    <ul class="main-nav__submenu"></ul>
+                  </div>
+                </li>
+              </ul>
+            </div><a class="button-default header-menu__feedback">Обратный звонок</a>
+            <!-- бургер-->
+            <button class="header-menu__burger burger" id="burger"><span></span><span></span></button>
+            <!-- меню-->
+            <div class="menu">
+              <div class="menu__wrapper"><a href="o-complekse.html"><span>О комплексе</span></a><a><span>Локации</span><svg width="18" height="9" viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 9L0 0H18L9 9Z" fill="#2E0800"/></svg></a>
+                <div class="submenu"><a href="alleya-melnic.html"><span>Аллея мельниц</span></a><a href="etnograficheskiy-park.html"><span>Этнографический парк</span></a><a href="otdyh-vsey-semyey.html"><span>Отдых всей семьи</span></a></div><a href="contacts.html"><span>Контакты</span></a><a href="carta-putishestviy.html"><span>Карта путешествий</span></a><a href="events.html"><span>Мероприятия</span></a><a href="news.html"><span>Новости</span></a><a href=""><span>Интернет-магазин</span></a>
+              </div>
+              <button class="button-default menu__button">Обратный звонок</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="feedback">
+          <div class="modal__wrapper">
+            <h2 class="modal__title">Обратный звонок</h2>
+            <form class="modal__form" action="">
+              <input type="name" placeholder="Имя">
+              <input type="tel" placeholder="Телефон">
+            </form>
+            <div class="modal__concenst">Нажимая кнопку отправить вы подтверждаете своё согласие на обработку &nbsp;<a href="">персональных данных</a></div>
+            <button class="button-default" type="submit"><span>Отправить</span><img src="images/dest/vector/arrow-btn.svg" alt=""></button>
+            <button class="modal__close"></button>
+          </div>
+        </div>
+        <div class="modal" id="submit">
+          <div class="modal__wrapper"><img src="images/dest/vector/line.svg" alt="">
+            <div class="modal__inner">
+              <h2 class="modal__title">Ваша заявка принята</h2>
+              <div>В скором времени с вами свяжется наш сотрудник</div>
+            </div><img src="images/dest/vector/line.svg" alt="">
+          </div>
+        </div>
+      </header>
+      <div class="page">
+        <div class="breadcrumbs _container">
+          <div class="breadcrumbs__wrapper"><a href="/">Главная</a><img src="images/dest/vector/arrow-breadcrumbs.svg" alt=""><a class="active">Мероприятия</a></div>
+          <div class="breadcrumbs__mobile"><a href="/"><img src="images/dest/vector/arrow-breadcrumbs-mobile.svg" alt=""><span>Назад</span></a></div>
+        </div>
+        <div class="_container">
+          <h1 class="title-page"><span>Мероприятия</span><img src="images/dest/vector/two-lines.svg"></h1>
+        </div>
+        <section class="events-banner _container">
+          <div class="events-banner-swiper swiper-banner">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a class="events-banner__wrapper banner" href="event.html">
+                  <div class="events-banner__head">
+                    <date class="events-banner__date"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12C4.71667 12 4.479 11.904 4.287 11.712C4.09567 11.5207 4 11.2833 4 11C4 10.7167 4.09567 10.479 4.287 10.287C4.479 10.0957 4.71667 10 5 10C5.28333 10 5.521 10.0957 5.713 10.287C5.90433 10.479 6 10.7167 6 11C6 11.2833 5.90433 11.5207 5.713 11.712C5.521 11.904 5.28333 12 5 12ZM9 12C8.71667 12 8.47933 11.904 8.288 11.712C8.096 11.5207 8 11.2833 8 11C8 10.7167 8.096 10.479 8.288 10.287C8.47933 10.0957 8.71667 10 9 10C9.28333 10 9.521 10.0957 9.713 10.287C9.90433 10.479 10 10.7167 10 11C10 11.2833 9.90433 11.5207 9.713 11.712C9.521 11.904 9.28333 12 9 12ZM13 12C12.7167 12 12.4793 11.904 12.288 11.712C12.096 11.5207 12 11.2833 12 11C12 10.7167 12.096 10.479 12.288 10.287C12.4793 10.0957 12.7167 10 13 10C13.2833 10 13.5207 10.0957 13.712 10.287C13.904 10.479 14 10.7167 14 11C14 11.2833 13.904 11.5207 13.712 11.712C13.5207 11.904 13.2833 12 13 12ZM2 20C1.45 20 0.979 19.8043 0.587 19.413C0.195667 19.021 0 18.55 0 18V4C0 3.45 0.195667 2.97933 0.587 2.588C0.979 2.196 1.45 2 2 2H3V0H5V2H13V0H15V2H16C16.55 2 17.021 2.196 17.413 2.588C17.8043 2.97933 18 3.45 18 4V18C18 18.55 17.8043 19.021 17.413 19.413C17.021 19.8043 16.55 20 16 20H2ZM2 18H16V8H2V18ZM2 6H16V4H2V6Z" fill="white"/></svg><span>23 августа 2023</span></date>
+                    <h1 class="events-banner__title">Главное мероприятие</h1>
+                    <p class="events-banner__descr">В этот день церковь почитает память архидиакона Лаврентия Римского и Калужского, раннехристианских мучеников. У святого Лаврентия было много прозвищ — Заречник, Зоречник, Зоричник — но в народе его день чаще всего называли праздником мельника.</p>
+                  </div><img class="events-banner__picture" src="images/dest/swiper-pics/big-picture.jpg"></a></div>
+              <div class="swiper-slide"><a class="events-banner__wrapper banner" href="event.html">
+                  <div class="events-banner__head">
+                    <date class="events-banner__date"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12C4.71667 12 4.479 11.904 4.287 11.712C4.09567 11.5207 4 11.2833 4 11C4 10.7167 4.09567 10.479 4.287 10.287C4.479 10.0957 4.71667 10 5 10C5.28333 10 5.521 10.0957 5.713 10.287C5.90433 10.479 6 10.7167 6 11C6 11.2833 5.90433 11.5207 5.713 11.712C5.521 11.904 5.28333 12 5 12ZM9 12C8.71667 12 8.47933 11.904 8.288 11.712C8.096 11.5207 8 11.2833 8 11C8 10.7167 8.096 10.479 8.288 10.287C8.47933 10.0957 8.71667 10 9 10C9.28333 10 9.521 10.0957 9.713 10.287C9.90433 10.479 10 10.7167 10 11C10 11.2833 9.90433 11.5207 9.713 11.712C9.521 11.904 9.28333 12 9 12ZM13 12C12.7167 12 12.4793 11.904 12.288 11.712C12.096 11.5207 12 11.2833 12 11C12 10.7167 12.096 10.479 12.288 10.287C12.4793 10.0957 12.7167 10 13 10C13.2833 10 13.5207 10.0957 13.712 10.287C13.904 10.479 14 10.7167 14 11C14 11.2833 13.904 11.5207 13.712 11.712C13.5207 11.904 13.2833 12 13 12ZM2 20C1.45 20 0.979 19.8043 0.587 19.413C0.195667 19.021 0 18.55 0 18V4C0 3.45 0.195667 2.97933 0.587 2.588C0.979 2.196 1.45 2 2 2H3V0H5V2H13V0H15V2H16C16.55 2 17.021 2.196 17.413 2.588C17.8043 2.97933 18 3.45 18 4V18C18 18.55 17.8043 19.021 17.413 19.413C17.021 19.8043 16.55 20 16 20H2ZM2 18H16V8H2V18ZM2 6H16V4H2V6Z" fill="white"/></svg><span>23 августа 2023</span></date>
+                    <h1 class="events-banner__title">Главное мероприятие</h1>
+                    <p class="events-banner__descr">В этот день церковь почитает память архидиакона Лаврентия Римского и Калужского, раннехристианских мучеников. У святого Лаврентия было много прозвищ — Заречник, Зоречник, Зоричник — но в народе его день чаще всего называли праздником мельника.</p>
+                  </div><img class="events-banner__picture" src="images/dest/swiper-pics/big-picture.jpg"></a></div>
+              <div class="swiper-slide"><a class="events-banner__wrapper banner" href="event.html">
+                  <div class="events-banner__head">
+                    <date class="events-banner__date"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12C4.71667 12 4.479 11.904 4.287 11.712C4.09567 11.5207 4 11.2833 4 11C4 10.7167 4.09567 10.479 4.287 10.287C4.479 10.0957 4.71667 10 5 10C5.28333 10 5.521 10.0957 5.713 10.287C5.90433 10.479 6 10.7167 6 11C6 11.2833 5.90433 11.5207 5.713 11.712C5.521 11.904 5.28333 12 5 12ZM9 12C8.71667 12 8.47933 11.904 8.288 11.712C8.096 11.5207 8 11.2833 8 11C8 10.7167 8.096 10.479 8.288 10.287C8.47933 10.0957 8.71667 10 9 10C9.28333 10 9.521 10.0957 9.713 10.287C9.90433 10.479 10 10.7167 10 11C10 11.2833 9.90433 11.5207 9.713 11.712C9.521 11.904 9.28333 12 9 12ZM13 12C12.7167 12 12.4793 11.904 12.288 11.712C12.096 11.5207 12 11.2833 12 11C12 10.7167 12.096 10.479 12.288 10.287C12.4793 10.0957 12.7167 10 13 10C13.2833 10 13.5207 10.0957 13.712 10.287C13.904 10.479 14 10.7167 14 11C14 11.2833 13.904 11.5207 13.712 11.712C13.5207 11.904 13.2833 12 13 12ZM2 20C1.45 20 0.979 19.8043 0.587 19.413C0.195667 19.021 0 18.55 0 18V4C0 3.45 0.195667 2.97933 0.587 2.588C0.979 2.196 1.45 2 2 2H3V0H5V2H13V0H15V2H16C16.55 2 17.021 2.196 17.413 2.588C17.8043 2.97933 18 3.45 18 4V18C18 18.55 17.8043 19.021 17.413 19.413C17.021 19.8043 16.55 20 16 20H2ZM2 18H16V8H2V18ZM2 6H16V4H2V6Z" fill="white"/></svg><span>23 августа 2023</span></date>
+                    <h1 class="events-banner__title">Главное мероприятие</h1>
+                    <p class="events-banner__descr">В этот день церковь почитает память архидиакона Лаврентия Римского и Калужского, раннехристианских мучеников. У святого Лаврентия было много прозвищ — Заречник, Зоречник, Зоричник — но в народе его день чаще всего называли праздником мельника.</p>
+                  </div><img class="events-banner__picture" src="images/dest/swiper-pics/big-picture.jpg"></a></div>
+            </div>
+            <div class="swiper-nav swiper-nav__banner">
+              <button class="swiper-button swiper-button--white swiper-button-prev"><svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66484e-07 11L4.66487e-07 10.9999C5.10329e-07 9.99691 5.39208e-07 9.33623 1.2 9.1999C3.78892 8.90579 6.6 5.4682 6.6 2.15615L6.6 1.55615C6.6 0.893414 7.13726 0.356156 7.8 0.356156L9 0.356156C9.66274 0.356156 10.2 0.893414 10.2 1.55615L10.2 2.15616C10.2 4.67257 9.29763 7.02575 7.78568 8.78796C7.54565 9.06773 7.33334 9.3717 7.18196 9.70781L7.17078 9.73264C6.80729 10.5397 6.80152 11.4627 7.15489 12.2742C7.30624 12.6218 7.5235 12.9354 7.77102 13.2225C9.29182 14.9866 10.2 17.3471 10.2 19.8719L10.2 20.4719C10.2 21.1346 9.66274 21.6719 9 21.6719L7.8 21.6719C7.13726 21.6719 6.6 21.1346 6.6 20.4719L6.6 19.8719C6.6 16.559 3.78849 13.0935 1.2 12.7999C3.93755e-07 12.6638 4.2602e-07 11.9257 4.66484e-07 11Z" fill="white"/></svg></button>
+              <button class="swiper-button swiper-button--white swiper-button-next"><svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 11L11 10.9999C11 9.99691 11 9.33623 9.8 9.1999C7.21108 8.90579 4.4 5.4682 4.4 2.15615L4.4 1.55615C4.4 0.893414 3.86274 0.356156 3.2 0.356156L2 0.356156C1.33726 0.356156 0.800001 0.893414 0.800001 1.55615L0.800001 2.15616C0.800001 4.67257 1.70237 7.02575 3.21432 8.78796C3.45435 9.06773 3.66666 9.3717 3.81804 9.70781L3.82922 9.73264C4.19271 10.5397 4.19848 11.4627 3.84511 12.2742C3.69376 12.6218 3.4765 12.9354 3.22898 13.2225C1.70818 14.9866 0.8 17.3471 0.8 19.8719L0.8 20.4719C0.8 21.1346 1.33726 21.6719 2 21.6719L3.2 21.6719C3.86274 21.6719 4.4 21.1346 4.4 20.4719L4.4 19.8719C4.4 16.559 7.21151 13.0935 9.8 12.7999C11 12.6638 11 11.9257 11 11Z" fill="white"/></svg></button>
+            </div>
+          </div>
+        </section>
+        <section class="events-block">
+          <div class="events-block__wrapper">
+            <div class="_container">
+              <h2 class="title-inner"><span>Ближайшие мероприятия</span>
+                <div class="swiper-nav">
+                  <button class="swiper-button swiper-button-prev"><svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66484e-07 11L4.66487e-07 10.9999C5.10329e-07 9.99691 5.39208e-07 9.33623 1.2 9.1999C3.78892 8.90579 6.6 5.4682 6.6 2.15615L6.6 1.55615C6.6 0.893414 7.13726 0.356156 7.8 0.356156L9 0.356156C9.66274 0.356156 10.2 0.893414 10.2 1.55615L10.2 2.15616C10.2 4.67257 9.29763 7.02575 7.78568 8.78796C7.54565 9.06773 7.33334 9.3717 7.18196 9.70781L7.17078 9.73264C6.80729 10.5397 6.80152 11.4627 7.15489 12.2742C7.30624 12.6218 7.5235 12.9354 7.77102 13.2225C9.29182 14.9866 10.2 17.3471 10.2 19.8719L10.2 20.4719C10.2 21.1346 9.66274 21.6719 9 21.6719L7.8 21.6719C7.13726 21.6719 6.6 21.1346 6.6 20.4719L6.6 19.8719C6.6 16.559 3.78849 13.0935 1.2 12.7999C3.93755e-07 12.6638 4.2602e-07 11.9257 4.66484e-07 11Z" fill="white"/></svg></button>
+                  <button class="swiper-button swiper-button-next"><svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 11L11 10.9999C11 9.99691 11 9.33623 9.8 9.1999C7.21108 8.90579 4.4 5.4682 4.4 2.15615L4.4 1.55615C4.4 0.893414 3.86274 0.356156 3.2 0.356156L2 0.356156C1.33726 0.356156 0.800001 0.893414 0.800001 1.55615L0.800001 2.15616C0.800001 4.67257 1.70237 7.02575 3.21432 8.78796C3.45435 9.06773 3.66666 9.3717 3.81804 9.70781L3.82922 9.73264C4.19271 10.5397 4.19848 11.4627 3.84511 12.2742C3.69376 12.6218 3.4765 12.9354 3.22898 13.2225C1.70818 14.9866 0.8 17.3471 0.8 19.8719L0.8 20.4719C0.8 21.1346 1.33726 21.6719 2 21.6719L3.2 21.6719C3.86274 21.6719 4.4 21.1346 4.4 20.4719L4.4 19.8719C4.4 16.559 7.21151 13.0935 9.8 12.7999C11 12.6638 11 11.9257 11 11Z" fill="white"/></svg></button>
+                </div>
+              </h2>
+            </div>
+            <div class="_container opacity-slide">
+              <div class="swiper swiper-index swiper-offset">
+                <div class="swiper-wrapper"><a class="swiper__link swiper-slide" href="event.html"><img class="swiper__pic" src="images/dest/swiper-pics/rectangle42.jpg"><span class="swiper__descr">Какое-то длинное название мероприятия, или новости</span>
+                    <date class="swiper__date"><img src="images/dest/vector/date_range.svg"><span>7 Октября</span></date></a><a class="swiper__link swiper-slide" href="event.html"><img class="swiper__pic" src="images/dest/swiper-pics/rectangle43.jpg"><span class="swiper__descr">Какое-то длинное название мероприятия, или новости</span>
+                    <date class="swiper__date"><img src="images/dest/vector/date_range.svg"><span>7 Октября</span></date></a><a class="swiper__link swiper-slide" href="event.html"><img class="swiper__pic" src="images/dest/swiper-pics/rectangle44.jpg"><span class="swiper__descr">Какое-то длинное название мероприятия, или новости</span>
+                    <date class="swiper__date"><img src="images/dest/vector/date_range.svg"><span>7 Октября</span></date></a><a class="swiper__link swiper-slide" href="event.html"><img class="swiper__pic" src="images/dest/swiper-pics/rectangle45.jpg"><span class="swiper__descr">Какое-то длинное название мероприятия, или новости</span>
+                    <date class="swiper__date"><img src="images/dest/vector/date_range.svg"><span>7 Октября</span></date></a><a class="swiper__link swiper-slide" href="event.html"><img class="swiper__pic" src="images/dest/swiper-pics/rectangle46.jpg"><span class="swiper__descr">Какое-то длинное название мероприятия, или новости</span>
+                    <date class="swiper__date"><img src="images/dest/vector/date_range.svg"><span>7 Октября</span></date></a><a class="swiper__link swiper-slide" href="event.html"><img class="swiper__pic" src="images/dest/swiper-pics/rectangle44.jpg"><span class="swiper__descr">Какое-то длинное название мероприятия, или новости</span>
+                    <date class="swiper__date"><img src="images/dest/vector/date_range.svg"><span>7 Октября</span></date></a><a class="swiper__link swiper-slide" href="event.html"><img class="swiper__pic" src="images/dest/swiper-pics/rectangle45.jpg"><span class="swiper__descr">Какое-то длинное название мероприятия, или новости</span>
+                    <date class="swiper__date"><img src="images/dest/vector/date_range.svg"><span>7 Октября</span></date></a><a class="swiper__link swiper-slide" href="event.html"><img class="swiper__pic" src="images/dest/swiper-pics/rectangle46.jpg"><span class="swiper__descr">Какое-то длинное название мероприятия, или новости</span>
+                    <date class="swiper__date"><img src="images/dest/vector/date_range.svg"><span>7 Октября</span></date></a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="all-events _container">
+          <h2 class="title-inner">Все мероприятия</h2>
+          <div class="all-events__categorys"><a class="all-events__category active" href="#"><img src="images/dest/vector/events/item1.svg" alt=""><span class="all-events__title">Все праздники</span></a><a class="all-events__category" href="#"><img src="images/dest/vector/events/item2.svg" alt=""><span class="all-events__title">календарные и государственные</span></a><a class="all-events__category" href="#"><img src="images/dest/vector/events/item3.svg" alt=""><span class="all-events__title">религиозные</span></a><a class="all-events__category" href="#"><img src="images/dest/vector/events/item4.svg" alt=""><span class="all-events__title">обрядовые</span></a><a class="all-events__category" href="#"><img src="images/dest/vector/events/item5.svg" alt=""><span class="all-events__title">массовые мероприятия</span></a><a class="all-events__category" href="#"><img src="images/dest/vector/events/item6.svg" alt=""><span class="all-events__title">детские</span></a><a class="all-events__category" href="#"><img src="images/dest/vector/events/item7.svg" alt=""><span class="all-events__title">другое</span></a></div>
+          <button class="button-default button-default--white" id="category-btn">Показать все категории</button>
+          <div class="all-events__gallery gallery-events">
+            <div class="select"><span>Показать мероприятия на:</span>
+              <select class="select__options button-default">
+                <option>Всё время</option>
+                <option>Январь</option>
+                <option>Февраль</option>
+                <option>Март</option>
+                <option>Апрель</option>
+                <option>Май</option>
+                <option>Июнь</option>
+                <option>Июль</option>
+                <option>Август</option>
+                <option>Сентярь</option>
+                <option>Октябрь</option>
+                <option>Ноябрь</option>
+                <option>Декабрь</option>
+              </select>
+            </div>
+            <div class="gallery-events__wrapper items-more"><a class="gallery-events__item" href="event.html"><img class="gallery-events__picture" src="images/dest/gallery-events/item1.jpg">
+                <div class="gallery-events__descr">Какое-то длинное название мероприятия, или новости</div>
+                <date class="gallery-events__date"><img src="images/dest/vector/date_range.svg" alt=""><span>5 Апреля</span></date></a><a class="gallery-events__item" href="event.html"><img class="gallery-events__picture" src="images/dest/gallery-events/item2.jpg">
+                <div class="gallery-events__descr">Какое-то длинное название мероприятия, или новости</div>
+                <date class="gallery-events__date"><img src="images/dest/vector/date_range.svg" alt=""><span>5 Апреля</span></date></a><a class="gallery-events__item" href="event.html"><img class="gallery-events__picture" src="images/dest/gallery-events/item3.jpg">
+                <div class="gallery-events__descr">Какое-то длинное название мероприятия, или новости</div>
+                <date class="gallery-events__date"><img src="images/dest/vector/date_range.svg" alt=""><span>5 Апреля</span></date></a><a class="gallery-events__item" href="event.html"><img class="gallery-events__picture" src="images/dest/gallery-events/item4.jpg">
+                <div class="gallery-events__descr">Какое-то длинное название мероприятия, или новости</div>
+                <date class="gallery-events__date"><img src="images/dest/vector/date_range.svg" alt=""><span>5 Апреля</span></date></a><a class="gallery-events__item" href="event.html"><img class="gallery-events__picture" src="images/dest/gallery-events/item5.jpg">
+                <div class="gallery-events__descr">Какое-то длинное название мероприятия, или новости</div>
+                <date class="gallery-events__date"><img src="images/dest/vector/date_range.svg" alt=""><span>5 Апреля</span></date></a><a class="gallery-events__item" href="event.html"><img class="gallery-events__picture" src="images/dest/gallery-events/item6.jpg">
+                <div class="gallery-events__descr">Какое-то длинное название мероприятия, или новости</div>
+                <date class="gallery-events__date"><img src="images/dest/vector/date_range.svg" alt=""><span>5 Апреля</span></date></a><a class="gallery-events__item" href="event.html"><img class="gallery-events__picture" src="images/dest/gallery-events/item7.jpg">
+                <div class="gallery-events__descr">Какое-то длинное название мероприятия, или новости</div>
+                <date class="gallery-events__date"><img src="images/dest/vector/date_range.svg" alt=""><span>5 Апреля</span></date></a><a class="gallery-events__item" href="event.html"><img class="gallery-events__picture" src="images/dest/gallery-events/item8.jpg">
+                <div class="gallery-events__descr">Какое-то длинное название мероприятия, или новости</div>
+                <date class="gallery-events__date"><img src="images/dest/vector/date_range.svg" alt=""><span>5 Апреля</span></date></a></div>
+            <button class="button-default show-more" id="gallery-btn">Загрузить ещё</button>
+          </div>
+        </section>
+      </div>
+      <!-- подвал-->
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-top__wrapper _container">
+            <div class="footer-top__col col1"><a class="logo footer__logo" href="/"><img src="images/dest/vector/logo-white.svg"></a>
+              <div class="footer-top__item footer-top__phone"><a href="+79991234567"><img src="images/dest/vector/phonelink_ring.svg" alt="Сделать звонок"><span>+7 999 123 45 67</span></a></div>
+              <div class="footer-top__item footer-top__mail"><a href="mailto:unreal@mail.ru"><img src="images/dest/vector/light-alternate_email.svg"><span>unreal@mail.ru</span></a></div>
+              <div class="footer-top__item footer-top__location"><a href=""><img src="images/dest/vector/near_me.svg"><span>Курская область, Пристенский <i class="br"></i> район, село Красниково</span></a></div>
+            </div>
+            <div class="footer-top__col col2"><span class="footer-top__title">О комплексе</span>
+              <ul class="footer-top__links">
+                <li><a href="">Информация</a></li>
+                <li><a href="">Новости</a></li>
+                <li><a href="">Локации</a></li>
+                <li><a href="">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer-top__col col3"><span class="footer-top__title">Посетителям</span>
+              <ul class="footer-top__links">
+                <li><a href="">Экскурсии</a></li>
+                <li><a href="">3D тур</a></li>
+                <li><a href="">Карта путешествий</a></li>
+              </ul>
+            </div>
+            <div class="footer-top__col footer-top__social col4"><a href=""><img src="images/dest/vector/icon-ok.svg"></a><a href=""><img src="images/dest/vector/icon-vk.svg"></a><a href=""><img src="images/dest/vector/icon-rutube.svg"></a></div>
+            <div class="footer-top__col footer-top__info col5"><span>&copy; Парк мельниц 2022</span><a href="">Политика конфиденциальности</a><a href="">Обработка персональных данных</a></div>
+            <div class="footer-top__col footer-top__info col6"><span>Создание сайта &nbsp;<a href="https://kvokka.com/">kvokka.com</a></span><span>3D визуализация &nbsp;<a href="3d-studio.su">3d-studio.su</a></span></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.nice-select.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=&lt;ваш API-ключ&gt;"></script>
+    <script src="js/geoobject_contextmenu.js"></script>
+    <script src="js/geoobject_contextmenu2.js"></script>
+    <script src="js/pleer.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+extends base
+block page
+    .breadcrumbs._container
+        .breadcrumbs__wrapper
+            a(href="/") Главная
+            img(src="images/dest/vector/arrow-breadcrumbs.svg" alt="")
+            a.active Новости
+        .breadcrumbs__mobile
+            a(href="/")
+                img(src="images/dest/vector/arrow-breadcrumbs-mobile.svg" alt="")
+                span Назад
+    section.news._container
+        h1.title-page
+            span Новости
+            img(src="images/dest/vector/two-lines.svg")
+        .select
+            span Показать новости
+            select.select__options.select__options--white.button-default.button-default--white
+                option(value="") Сначала новые
+                option(value="") Сначала новые
+                option(value="") Сначала новые
+        .news__wrapper.items-more
+            a(href="new.html").news__item
+                img(src="images/dest/news/item1.jpg", alt="").news__picture
+                date.news__date
+                    img(src="images/dest/vector/date_range2.svg", alt="")
+                    span 25 января 2022
+                .news__title Туроператорам региона предложено включить данный объект в действующий экскурсионный маршрут
+                p.news__text Сейчас идет ремонт одного из объектов культурного наследия нашего края - уникальной водяной мельницы в деревне Красниково Пристенского района. Единственная сохранившаяся в Черноземье мельница была построена в XVIII веке без единого гвоздя.
+            a(href="new.html").news__item
+                img(src="images/dest/news/item1.jpg", alt="").news__picture
+                date.news__date
+                    img(src="images/dest/vector/date_range2.svg", alt="")
+                    span 25 января 2022
+                .news__title Туроператорам региона предложено включить данный объект в действующий экскурсионный маршрут
+                p.news__text Сейчас идет ремонт одного из объектов культурного наследия нашего края - уникальной водяной мельницы в деревне Красниково Пристенского района. Единственная сохранившаяся в Черноземье мельница была построена в XVIII веке без единого гвоздя.
+            a(href="new.html").news__item
+                img(src="images/dest/news/item1.jpg", alt="").news__picture
+                date.news__date
+                    img(src="images/dest/vector/date_range2.svg", alt="")
+                    span 25 января 2022
+                .news__title Туроператорам региона предложено включить данный объект в действующий экскурсионный маршрут
+                p.news__text Сейчас идет ремонт одного из объектов культурного наследия нашего края - уникальной водяной мельницы в деревне Красниково Пристенского района. Единственная сохранившаяся в Черноземье мельница была построена в XVIII веке без единого гвоздя.
+            a(href="new.html").news__item
+                img(src="images/dest/news/item1.jpg", alt="").news__picture
+                date.news__date
+                    img(src="images/dest/vector/date_range2.svg", alt="")
+                    span 25 января 2022
+                .news__title Туроператорам региона предложено включить данный объект в действующий экскурсионный маршрут
+                p.news__text Сейчас идет ремонт одного из объектов культурного наследия нашего края - уникальной водяной мельницы в деревне Красниково Пристенского района. Единственная сохранившаяся в Черноземье мельница была построена в XVIII веке без единого гвоздя.
+
+        button.button-default.show-more Загрузить ещё

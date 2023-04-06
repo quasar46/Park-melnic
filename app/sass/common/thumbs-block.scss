@@ -1,0 +1,15 @@
+.thumbs-block {
+    .swiper-container {
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+}
+
+.thumbs-block__fancy {
+    display: none;
+    @media (max-width: 767px) {
+        display: flex;
+        align-items: center;
+    }
+}

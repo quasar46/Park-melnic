@@ -1,0 +1,209 @@
+extends base
+block page
+    .breadcrumbs._container
+        .breadcrumbs__wrapper
+            a(href="/") Главная
+            img(src="images/dest/vector/arrow-breadcrumbs.svg" alt="")
+            a.active Мероприятия
+        .breadcrumbs__mobile
+            a(href="/")
+                img(src="images/dest/vector/arrow-breadcrumbs-mobile.svg" alt="")
+                span Назад
+    ._container
+        h1.title-page
+            span Мероприятия
+            img(src="images/dest/vector/two-lines.svg")
+
+    section.events-banner._container
+        .events-banner-swiper.swiper-banner
+            .swiper-wrapper
+                .swiper-slide
+                    a(href="event.html").events-banner__wrapper.banner
+                        .events-banner__head
+                            date.events-banner__date
+                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12C4.71667 12 4.479 11.904 4.287 11.712C4.09567 11.5207 4 11.2833 4 11C4 10.7167 4.09567 10.479 4.287 10.287C4.479 10.0957 4.71667 10 5 10C5.28333 10 5.521 10.0957 5.713 10.287C5.90433 10.479 6 10.7167 6 11C6 11.2833 5.90433 11.5207 5.713 11.712C5.521 11.904 5.28333 12 5 12ZM9 12C8.71667 12 8.47933 11.904 8.288 11.712C8.096 11.5207 8 11.2833 8 11C8 10.7167 8.096 10.479 8.288 10.287C8.47933 10.0957 8.71667 10 9 10C9.28333 10 9.521 10.0957 9.713 10.287C9.90433 10.479 10 10.7167 10 11C10 11.2833 9.90433 11.5207 9.713 11.712C9.521 11.904 9.28333 12 9 12ZM13 12C12.7167 12 12.4793 11.904 12.288 11.712C12.096 11.5207 12 11.2833 12 11C12 10.7167 12.096 10.479 12.288 10.287C12.4793 10.0957 12.7167 10 13 10C13.2833 10 13.5207 10.0957 13.712 10.287C13.904 10.479 14 10.7167 14 11C14 11.2833 13.904 11.5207 13.712 11.712C13.5207 11.904 13.2833 12 13 12ZM2 20C1.45 20 0.979 19.8043 0.587 19.413C0.195667 19.021 0 18.55 0 18V4C0 3.45 0.195667 2.97933 0.587 2.588C0.979 2.196 1.45 2 2 2H3V0H5V2H13V0H15V2H16C16.55 2 17.021 2.196 17.413 2.588C17.8043 2.97933 18 3.45 18 4V18C18 18.55 17.8043 19.021 17.413 19.413C17.021 19.8043 16.55 20 16 20H2ZM2 18H16V8H2V18ZM2 6H16V4H2V6Z" fill="white"/></svg>
+                                span 23 августа 2023
+                            h1.events-banner__title Главное мероприятие
+                            p.events-banner__descr В этот день церковь почитает память архидиакона Лаврентия Римского и Калужского, раннехристианских мучеников. У святого Лаврентия было много прозвищ — Заречник, Зоречник, Зоричник — но в народе его день чаще всего называли праздником мельника.
+                        img(src="images/dest/swiper-pics/big-picture.jpg").events-banner__picture
+                .swiper-slide
+                    a(href="event.html").events-banner__wrapper.banner
+                        .events-banner__head
+                            date.events-banner__date
+                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12C4.71667 12 4.479 11.904 4.287 11.712C4.09567 11.5207 4 11.2833 4 11C4 10.7167 4.09567 10.479 4.287 10.287C4.479 10.0957 4.71667 10 5 10C5.28333 10 5.521 10.0957 5.713 10.287C5.90433 10.479 6 10.7167 6 11C6 11.2833 5.90433 11.5207 5.713 11.712C5.521 11.904 5.28333 12 5 12ZM9 12C8.71667 12 8.47933 11.904 8.288 11.712C8.096 11.5207 8 11.2833 8 11C8 10.7167 8.096 10.479 8.288 10.287C8.47933 10.0957 8.71667 10 9 10C9.28333 10 9.521 10.0957 9.713 10.287C9.90433 10.479 10 10.7167 10 11C10 11.2833 9.90433 11.5207 9.713 11.712C9.521 11.904 9.28333 12 9 12ZM13 12C12.7167 12 12.4793 11.904 12.288 11.712C12.096 11.5207 12 11.2833 12 11C12 10.7167 12.096 10.479 12.288 10.287C12.4793 10.0957 12.7167 10 13 10C13.2833 10 13.5207 10.0957 13.712 10.287C13.904 10.479 14 10.7167 14 11C14 11.2833 13.904 11.5207 13.712 11.712C13.5207 11.904 13.2833 12 13 12ZM2 20C1.45 20 0.979 19.8043 0.587 19.413C0.195667 19.021 0 18.55 0 18V4C0 3.45 0.195667 2.97933 0.587 2.588C0.979 2.196 1.45 2 2 2H3V0H5V2H13V0H15V2H16C16.55 2 17.021 2.196 17.413 2.588C17.8043 2.97933 18 3.45 18 4V18C18 18.55 17.8043 19.021 17.413 19.413C17.021 19.8043 16.55 20 16 20H2ZM2 18H16V8H2V18ZM2 6H16V4H2V6Z" fill="white"/></svg>
+                                span 23 августа 2023
+                            h1.events-banner__title Главное мероприятие
+                            p.events-banner__descr В этот день церковь почитает память архидиакона Лаврентия Римского и Калужского, раннехристианских мучеников. У святого Лаврентия было много прозвищ — Заречник, Зоречник, Зоричник — но в народе его день чаще всего называли праздником мельника.
+                        img(src="images/dest/swiper-pics/big-picture.jpg").events-banner__picture
+                .swiper-slide
+                    a(href="event.html").events-banner__wrapper.banner
+                        .events-banner__head
+                            date.events-banner__date
+                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12C4.71667 12 4.479 11.904 4.287 11.712C4.09567 11.5207 4 11.2833 4 11C4 10.7167 4.09567 10.479 4.287 10.287C4.479 10.0957 4.71667 10 5 10C5.28333 10 5.521 10.0957 5.713 10.287C5.90433 10.479 6 10.7167 6 11C6 11.2833 5.90433 11.5207 5.713 11.712C5.521 11.904 5.28333 12 5 12ZM9 12C8.71667 12 8.47933 11.904 8.288 11.712C8.096 11.5207 8 11.2833 8 11C8 10.7167 8.096 10.479 8.288 10.287C8.47933 10.0957 8.71667 10 9 10C9.28333 10 9.521 10.0957 9.713 10.287C9.90433 10.479 10 10.7167 10 11C10 11.2833 9.90433 11.5207 9.713 11.712C9.521 11.904 9.28333 12 9 12ZM13 12C12.7167 12 12.4793 11.904 12.288 11.712C12.096 11.5207 12 11.2833 12 11C12 10.7167 12.096 10.479 12.288 10.287C12.4793 10.0957 12.7167 10 13 10C13.2833 10 13.5207 10.0957 13.712 10.287C13.904 10.479 14 10.7167 14 11C14 11.2833 13.904 11.5207 13.712 11.712C13.5207 11.904 13.2833 12 13 12ZM2 20C1.45 20 0.979 19.8043 0.587 19.413C0.195667 19.021 0 18.55 0 18V4C0 3.45 0.195667 2.97933 0.587 2.588C0.979 2.196 1.45 2 2 2H3V0H5V2H13V0H15V2H16C16.55 2 17.021 2.196 17.413 2.588C17.8043 2.97933 18 3.45 18 4V18C18 18.55 17.8043 19.021 17.413 19.413C17.021 19.8043 16.55 20 16 20H2ZM2 18H16V8H2V18ZM2 6H16V4H2V6Z" fill="white"/></svg>
+                                span 23 августа 2023
+                            h1.events-banner__title Главное мероприятие
+                            p.events-banner__descr В этот день церковь почитает память архидиакона Лаврентия Римского и Калужского, раннехристианских мучеников. У святого Лаврентия было много прозвищ — Заречник, Зоречник, Зоричник — но в народе его день чаще всего называли праздником мельника.
+                        img(src="images/dest/swiper-pics/big-picture.jpg").events-banner__picture
+            .swiper-nav.swiper-nav__banner
+                button.swiper-button.swiper-button--white.swiper-button-prev
+                    <svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66484e-07 11L4.66487e-07 10.9999C5.10329e-07 9.99691 5.39208e-07 9.33623 1.2 9.1999C3.78892 8.90579 6.6 5.4682 6.6 2.15615L6.6 1.55615C6.6 0.893414 7.13726 0.356156 7.8 0.356156L9 0.356156C9.66274 0.356156 10.2 0.893414 10.2 1.55615L10.2 2.15616C10.2 4.67257 9.29763 7.02575 7.78568 8.78796C7.54565 9.06773 7.33334 9.3717 7.18196 9.70781L7.17078 9.73264C6.80729 10.5397 6.80152 11.4627 7.15489 12.2742C7.30624 12.6218 7.5235 12.9354 7.77102 13.2225C9.29182 14.9866 10.2 17.3471 10.2 19.8719L10.2 20.4719C10.2 21.1346 9.66274 21.6719 9 21.6719L7.8 21.6719C7.13726 21.6719 6.6 21.1346 6.6 20.4719L6.6 19.8719C6.6 16.559 3.78849 13.0935 1.2 12.7999C3.93755e-07 12.6638 4.2602e-07 11.9257 4.66484e-07 11Z" fill="white"/></svg>
+                button.swiper-button.swiper-button--white.swiper-button-next
+                    <svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 11L11 10.9999C11 9.99691 11 9.33623 9.8 9.1999C7.21108 8.90579 4.4 5.4682 4.4 2.15615L4.4 1.55615C4.4 0.893414 3.86274 0.356156 3.2 0.356156L2 0.356156C1.33726 0.356156 0.800001 0.893414 0.800001 1.55615L0.800001 2.15616C0.800001 4.67257 1.70237 7.02575 3.21432 8.78796C3.45435 9.06773 3.66666 9.3717 3.81804 9.70781L3.82922 9.73264C4.19271 10.5397 4.19848 11.4627 3.84511 12.2742C3.69376 12.6218 3.4765 12.9354 3.22898 13.2225C1.70818 14.9866 0.8 17.3471 0.8 19.8719L0.8 20.4719C0.8 21.1346 1.33726 21.6719 2 21.6719L3.2 21.6719C3.86274 21.6719 4.4 21.1346 4.4 20.4719L4.4 19.8719C4.4 16.559 7.21151 13.0935 9.8 12.7999C11 12.6638 11 11.9257 11 11Z" fill="white"/></svg>
+
+    section.events-block
+        .events-block__wrapper
+            ._container
+                h2.title-inner
+                    span Ближайшие мероприятия
+                    .swiper-nav
+                        button.swiper-button.swiper-button-prev
+                            <svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66484e-07 11L4.66487e-07 10.9999C5.10329e-07 9.99691 5.39208e-07 9.33623 1.2 9.1999C3.78892 8.90579 6.6 5.4682 6.6 2.15615L6.6 1.55615C6.6 0.893414 7.13726 0.356156 7.8 0.356156L9 0.356156C9.66274 0.356156 10.2 0.893414 10.2 1.55615L10.2 2.15616C10.2 4.67257 9.29763 7.02575 7.78568 8.78796C7.54565 9.06773 7.33334 9.3717 7.18196 9.70781L7.17078 9.73264C6.80729 10.5397 6.80152 11.4627 7.15489 12.2742C7.30624 12.6218 7.5235 12.9354 7.77102 13.2225C9.29182 14.9866 10.2 17.3471 10.2 19.8719L10.2 20.4719C10.2 21.1346 9.66274 21.6719 9 21.6719L7.8 21.6719C7.13726 21.6719 6.6 21.1346 6.6 20.4719L6.6 19.8719C6.6 16.559 3.78849 13.0935 1.2 12.7999C3.93755e-07 12.6638 4.2602e-07 11.9257 4.66484e-07 11Z" fill="white"/></svg>
+                        button.swiper-button.swiper-button-next
+                            <svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 11L11 10.9999C11 9.99691 11 9.33623 9.8 9.1999C7.21108 8.90579 4.4 5.4682 4.4 2.15615L4.4 1.55615C4.4 0.893414 3.86274 0.356156 3.2 0.356156L2 0.356156C1.33726 0.356156 0.800001 0.893414 0.800001 1.55615L0.800001 2.15616C0.800001 4.67257 1.70237 7.02575 3.21432 8.78796C3.45435 9.06773 3.66666 9.3717 3.81804 9.70781L3.82922 9.73264C4.19271 10.5397 4.19848 11.4627 3.84511 12.2742C3.69376 12.6218 3.4765 12.9354 3.22898 13.2225C1.70818 14.9866 0.8 17.3471 0.8 19.8719L0.8 20.4719C0.8 21.1346 1.33726 21.6719 2 21.6719L3.2 21.6719C3.86274 21.6719 4.4 21.1346 4.4 20.4719L4.4 19.8719C4.4 16.559 7.21151 13.0935 9.8 12.7999C11 12.6638 11 11.9257 11 11Z" fill="white"/></svg>
+
+            ._container.opacity-slide
+                .swiper.swiper-index.swiper-offset
+                    .swiper-wrapper
+                        a(href="event.html").swiper__link.swiper-slide
+                            img.swiper__pic(src="images/dest/swiper-pics/rectangle42.jpg")
+                            span.swiper__descr Какое-то длинное название мероприятия, или новости
+                            date.swiper__date
+                                img(src="images/dest/vector/date_range.svg")
+                                span 7 Октября
+                        a(href="event.html").swiper__link.swiper-slide
+                            img.swiper__pic(src="images/dest/swiper-pics/rectangle43.jpg")
+                            span.swiper__descr Какое-то длинное название мероприятия, или новости
+                            date.swiper__date
+                                img(src="images/dest/vector/date_range.svg")
+                                span 7 Октября
+                        a(href="event.html").swiper__link.swiper-slide
+                            img.swiper__pic(src="images/dest/swiper-pics/rectangle44.jpg")
+                            span.swiper__descr Какое-то длинное название мероприятия, или новости
+                            date.swiper__date
+                                img(src="images/dest/vector/date_range.svg")
+                                span 7 Октября
+                        a(href="event.html").swiper__link.swiper-slide
+                            img.swiper__pic(src="images/dest/swiper-pics/rectangle45.jpg")
+                            span.swiper__descr Какое-то длинное название мероприятия, или новости
+                            date.swiper__date
+                                img(src="images/dest/vector/date_range.svg")
+                                span 7 Октября
+                        a(href="event.html").swiper__link.swiper-slide
+                            img.swiper__pic(src="images/dest/swiper-pics/rectangle46.jpg")
+                            span.swiper__descr Какое-то длинное название мероприятия, или новости
+                            date.swiper__date
+                                img(src="images/dest/vector/date_range.svg")
+                                span 7 Октября
+                        a(href="event.html").swiper__link.swiper-slide
+                            img.swiper__pic(src="images/dest/swiper-pics/rectangle44.jpg")
+                            span.swiper__descr Какое-то длинное название мероприятия, или новости
+                            date.swiper__date
+                                img(src="images/dest/vector/date_range.svg")
+                                span 7 Октября
+                        a(href="event.html").swiper__link.swiper-slide
+                            img.swiper__pic(src="images/dest/swiper-pics/rectangle45.jpg")
+                            span.swiper__descr Какое-то длинное название мероприятия, или новости
+                            date.swiper__date
+                                img(src="images/dest/vector/date_range.svg")
+                                span 7 Октября
+                        a(href="event.html").swiper__link.swiper-slide
+                            img.swiper__pic(src="images/dest/swiper-pics/rectangle46.jpg")
+                            span.swiper__descr Какое-то длинное название мероприятия, или новости
+                            date.swiper__date
+                                img(src="images/dest/vector/date_range.svg")
+                                span 7 Октября
+
+
+    section.all-events._container
+        h2.title-inner Все мероприятия
+        .all-events__categorys
+            a(href="#").all-events__category.active
+                img(src="images/dest/vector/events/item1.svg" alt="")
+                span.all-events__title Все праздники
+            a(href="#").all-events__category
+                img(src="images/dest/vector/events/item2.svg" alt="")
+                span.all-events__title календарные и государственные
+            a(href="#").all-events__category
+                img(src="images/dest/vector/events/item3.svg" alt="")
+                span.all-events__title религиозные
+            a(href="#").all-events__category
+                img(src="images/dest/vector/events/item4.svg" alt="")
+                span.all-events__title обрядовые
+            a(href="#").all-events__category
+                img(src="images/dest/vector/events/item5.svg" alt="")
+                span.all-events__title массовые мероприятия
+            a(href="#").all-events__category
+                img(src="images/dest/vector/events/item6.svg" alt="")
+                span.all-events__title детские
+            a(href="#").all-events__category
+                img(src="images/dest/vector/events/item7.svg" alt="")
+                span.all-events__title другое
+        button.button-default.button-default--white#category-btn Показать все категории
+        .all-events__gallery.gallery-events
+            .select
+                span Показать мероприятия на:
+                select.select__options.button-default
+                    option Всё время
+                    option Январь
+                    option Февраль
+                    option Март
+                    option Апрель
+                    option Май
+                    option Июнь
+                    option Июль
+                    option Август
+                    option Сентярь
+                    option Октябрь
+                    option Ноябрь
+                    option Декабрь
+            .gallery-events__wrapper.items-more
+                a(href="event.html").gallery-events__item
+                    img(src="images/dest/gallery-events/item1.jpg").gallery-events__picture
+                    .gallery-events__descr Какое-то длинное название мероприятия, или новости
+                    date.gallery-events__date
+                        img(src="images/dest/vector/date_range.svg" alt="")
+                        span 5 Апреля
+                a(href="event.html").gallery-events__item
+                    img(src="images/dest/gallery-events/item2.jpg").gallery-events__picture
+                    .gallery-events__descr Какое-то длинное название мероприятия, или новости
+                    date.gallery-events__date
+                        img(src="images/dest/vector/date_range.svg" alt="")
+                        span 5 Апреля
+                a(href="event.html").gallery-events__item
+                    img(src="images/dest/gallery-events/item3.jpg").gallery-events__picture
+                    .gallery-events__descr Какое-то длинное название мероприятия, или новости
+                    date.gallery-events__date
+                        img(src="images/dest/vector/date_range.svg" alt="")
+                        span 5 Апреля
+                a(href="event.html").gallery-events__item
+                    img(src="images/dest/gallery-events/item4.jpg").gallery-events__picture
+                    .gallery-events__descr Какое-то длинное название мероприятия, или новости
+                    date.gallery-events__date
+                        img(src="images/dest/vector/date_range.svg" alt="")
+                        span 5 Апреля
+                a(href="event.html").gallery-events__item
+                    img(src="images/dest/gallery-events/item5.jpg").gallery-events__picture
+                    .gallery-events__descr Какое-то длинное название мероприятия, или новости
+                    date.gallery-events__date
+                        img(src="images/dest/vector/date_range.svg" alt="")
+                        span 5 Апреля
+                a(href="event.html").gallery-events__item
+                    img(src="images/dest/gallery-events/item6.jpg").gallery-events__picture
+                    .gallery-events__descr Какое-то длинное название мероприятия, или новости
+                    date.gallery-events__date
+                        img(src="images/dest/vector/date_range.svg" alt="")
+                        span 5 Апреля
+                a(href="event.html").gallery-events__item
+                    img(src="images/dest/gallery-events/item7.jpg").gallery-events__picture
+                    .gallery-events__descr Какое-то длинное название мероприятия, или новости
+                    date.gallery-events__date
+                        img(src="images/dest/vector/date_range.svg" alt="")
+                        span 5 Апреля
+                a(href="event.html").gallery-events__item
+                    img(src="images/dest/gallery-events/item8.jpg").gallery-events__picture
+                    .gallery-events__descr Какое-то длинное название мероприятия, или новости
+                    date.gallery-events__date
+                        img(src="images/dest/vector/date_range.svg" alt="")
+                        span 5 Апреля
+
+            button.button-default.show-more#gallery-btn Загрузить ещё

@@ -1,0 +1,65 @@
+extends base.pug
+block page
+    .breadcrumbs._container
+        .breadcrumbs__wrapper
+            a(href="/") Главная
+            img(src="images/dest/vector/arrow-breadcrumbs.svg" alt="")
+            a Отдых всей семьей
+            img(src="images/dest/vector/arrow-breadcrumbs.svg" alt="")
+            a.active Аллея мельниц
+        .breadcrumbs__mobile
+            a(href="/")
+                img(src="images/dest/vector/arrow-breadcrumbs-mobile.svg" alt="")
+                span Назад
+
+    h1.title-page._container
+        span Аллея мельниц
+        img(src="images/dest/vector/two-lines.svg" alt="")
+
+
+    section.simple-banner._container
+        img(src="images/dest/banners/banner1.jpg" alt="")
+
+    section.block-image._container
+        .block-image__content
+            p.block-image__descr Тут краткая суть. А также непосредственные участники технического прогресса, инициированные исключительно синтетически, указаны как претенденты на роль ключевых факторов.
+            p.block-image__text Текст про экскурсии — это «рыба». Он находится рядом с объектом культурного наследия регионального значения — водяной мельницей начала XVIII века. Также в деревне также будут площади под открытым небом для проведения фестивалей. Всё благоустроят, используя дерево, камень и озеленение, как у естественного луга. Детские площадки также оформят в традициях края — с росписями и мотивами кожлянской игрушки.
+            a(href="").button-default.block-image__button
+                span Забронировать
+            .block-image__pic.block-image__pic--mobile
+                .figure-pic
+                    .figure-pic__wrapper.figure-pic__wrapper--one
+                        //- img(src="images/dest/image77.jpg", alt="")
+                        img(src="images/dest/image132.jpg", alt="")
+                    .border.border-2
+        .block-image__pic
+            .figure-pic
+                .figure-pic__wrapper.figure-pic__wrapper--one
+                    //- img(src="images/dest/image77.jpg", alt="")
+                    img(src="images/dest/image132.jpg", alt="")
+                .border.border-2
+
+    section.locations-block
+        ._container.opacity-slide.opacity-slide--2
+            .swiper-location.swiper-location-4
+                .swiper-wrapper
+                    .swiper-slide.location-block__item
+                        img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                        .location-block__title
+                            span Столбовка
+                            img(src="images/dest/vector/arrow-next.svg" alt="")
+                    .swiper-slide.location-block__item
+                        img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                        .location-block__title
+                            span Водяная мельница
+                            img(src="images/dest/vector/arrow-next.svg" alt="")
+                    .swiper-slide.location-block__item
+                        img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                        .location-block__title
+                            span Водяное колесо
+                            img(src="images/dest/vector/arrow-next.svg" alt="")
+                    .swiper-slide.location-block__item
+                        img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                        .location-block__title
+                            span Шатровка
+                            img(src="images/dest/vector/arrow-next.svg" alt="")

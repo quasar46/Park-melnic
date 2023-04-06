@@ -1,0 +1,160 @@
+extends base.pug
+block page
+    .breadcrumbs._container
+        .breadcrumbs__wrapper
+            a(href="/") Главная
+            img(src="images/dest/vector/arrow-breadcrumbs.svg" alt="")
+            a.active Этно-деревня
+        .breadcrumbs__mobile
+            a(href="/")
+                img(src="images/dest/vector/arrow-breadcrumbs-mobile.svg" alt="")
+                span Назад
+
+    h1.title-page.title-page--mode._container
+        span Этно-деревня
+        img(src="images/dest/vector/two-lines.svg" alt="")
+
+    section._container
+        .single-picture
+            img(src="images/dest/image77.jpg", alt="")
+
+    section.locations-block._container
+        h2.title-inner Купеческая улица
+        .location-block__wrapper.location-block__wrapper--flex
+            .location-block__item.location-block__item--100
+                img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                .location-block__title
+                    span Столбовка
+                    img(src="images/dest/vector/arrow-next.svg" alt="")
+            .location-block__item.location-block__item--100
+                img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                .location-block__title
+                    span Водяная мельница
+                    img(src="images/dest/vector/arrow-next.svg" alt="")
+
+    section.locations-block
+        ._container
+            h2.title-inner Торговая улица
+        ._container.opacity-slide.opacity-slide--6
+            .location-block__wrapper.location-block__wrapper--mode
+                .swiper2.mySwiper2.swiper-offset2
+                    .swiper-wrapper.swiper-wrapper__grid
+                        .swiper-slide.location-block__item.location-block__item--mode
+                            img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                            .location-block__title
+                                span Кукольный двор
+                                img(src="images/dest/vector/arrow-next.svg" alt="")
+                        .swiper-slide.location-block__item.location-block__item--mode
+                            img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                            .location-block__title
+                                span Дом фольклора
+                                img(src="images/dest/vector/arrow-next.svg" alt="")
+                        .swiper-slide.location-block__item.location-block__item--mode
+                            img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                            .location-block__title
+                                span Дом ткача
+                                img(src="images/dest/vector/arrow-next.svg" alt="")
+                        .swiper-slide.location-block__item.location-block__item--mode
+                            img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                            .location-block__title
+                                span Почтовая станция
+                                img(src="images/dest/vector/arrow-next.svg" alt="")
+
+    section.locations-block
+        ._container
+            h2.title-inner Сельская улица
+        ._container.opacity-slide.opacity-slide--6
+            .location-block__wrapper.location-block__wrapper--mode
+                .swiper2.mySwiper2.swiper-offset2
+                    .swiper-wrapper.swiper-wrapper__grid.swiper-wrapper__grid--2
+                        .swiper-slide.location-block__item.item1
+                            img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                            .location-block__title
+                                span Дом пекаря
+                                img(src="images/dest/vector/arrow-next.svg" alt="")
+                        .swiper-slide.location-block__item.item2
+                            img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                            .location-block__title
+                                span Корчма
+                                img(src="images/dest/vector/arrow-next.svg" alt="")
+                        .swiper-slide.location-block__item.item3
+                            img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                            .location-block__title
+                                span Академическое подворье
+                                img(src="images/dest/vector/arrow-next.svg" alt="")
+                        .swiper-slide.location-block__item.item4
+                            img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                            .location-block__title
+                                span Дом пасечника с лавкой травника
+                                img(src="images/dest/vector/arrow-next.svg" alt="")
+                        .swiper-slide.location-block__item.item5
+                            img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                            .location-block__title
+                                span Дом шорника
+                                img(src="images/dest/vector/arrow-next.svg" alt="")
+
+    section.locations-block
+        ._container
+            h2.title-inner Ремесленная улица
+        ._container.opacity-slide.opacity-slide--6
+            .location-block__wrapper.location-block__wrapper--mode
+                .swiper2.mySwiper2.swiper-offset2
+                    .swiper-wrapper.swiper-wrapper__grid.swiper-wrapper__grid--3
+                        .swiper-slide.location-block__item
+                            img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                            .location-block__title
+                                span Дом охотника и рыбака
+                                img(src="images/dest/vector/arrow-next.svg" alt="")
+                        .swiper-slide.location-block__item
+                            img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                            .location-block__title
+                                span Мясная лавка
+                                img(src="images/dest/vector/arrow-next.svg" alt="")
+                        .swiper-slide.location-block__item
+                            img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                            .location-block__title
+                                span Дом молочника
+                                img(src="images/dest/vector/arrow-next.svg" alt="")
+                        .swiper-slide.location-block__item
+                            img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                            .location-block__title
+                                span Трактир с местной традиционной кухней
+                                img(src="images/dest/vector/arrow-next.svg" alt="")
+                        .swiper-slide.location-block__item
+                            img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                            .location-block__title
+                                span Дом гончара
+                                img(src="images/dest/vector/arrow-next.svg" alt="")
+                        .swiper-slide.location-block__item
+                            img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                            .location-block__title
+                                span Дом "Лаптя"
+                                img(src="images/dest/vector/arrow-next.svg" alt="")
+                        .swiper-slide.location-block__item
+                            img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                            .location-block__title
+                                span Дом плотника
+                                img(src="images/dest/vector/arrow-next.svg" alt="")
+                        .swiper-slide.location-block__item
+                            img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                            .location-block__title
+                                span Дом кузнеца
+                                img(src="images/dest/vector/arrow-next.svg" alt="")
+                        .swiper-slide.location-block__item
+                            img.location-block__picture(src="images/dest/location/item2.jpg" alt="")
+                            .location-block__title
+                                span Дом литейщика
+                                img(src="images/dest/vector/arrow-next.svg" alt="")
+
+    section.locations-block._container
+        h2.title-inner Казачья слобода
+        a(href="").locations-block__pic-figure
+            img(src="images/dest/image77.jpg", alt="")
+    section.locations-block._container
+        h2.title-inner Древний Курск
+        a(href="").locations-block__pic-figure
+            img(src="images/dest/image77.jpg", alt="")
+    section.locations-block._container
+        h2.title-inner Дом Соловья разбойника
+        a(href="").locations-block__pic-figure
+            img(src="images/dest/image77.jpg", alt="")

@@ -1,0 +1,70 @@
+.main-banner {
+  background-image: url("../images/dest/image77.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  &--events {
+    background-image: none;
+  }
+}
+
+.main-banner__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-banner__head {
+  padding-top: 216px;
+  padding-bottom: 221px;
+  //max-width: 700px;
+  @media (max-width: 1919px) {
+    padding-top: 190px;
+    padding-bottom: 217px;
+  }
+  @media (max-width: 1279px) {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+  @media (max-width: 767px) {
+    padding-top: 80px;
+    padding-bottom: 106px;
+  }
+}
+
+.main-banner__title {
+  font-size: 96px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 30px;
+  @media (max-width: 1279px) {
+    font-size: 64px;
+  }
+}
+
+.main-banner__descr {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.2;
+  max-width: 700px;
+  @media (max-width: 1919px) {
+    max-width: 653px;
+  }
+  @media (max-width: 1279px) {
+    font-size: 20px;
+    max-width: 100%;
+  }
+}
+
+.main-banner__date {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  svg {
+    margin-right: 10px;
+  }
+  span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}

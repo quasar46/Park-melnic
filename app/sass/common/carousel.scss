@@ -1,0 +1,28 @@
+.carousel {
+  display: none;
+  overflow: scroll;
+  /* Скрываем scrollbar для Chrome, Safari и Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Скрываем scrollbar для IE, Edge и Firefox */
+  -ms-overflow-style: none; /* IE и Edge */
+  scrollbar-width: none; /* Firefox */
+  @media (max-width: 767px) {
+    display: flex;
+    gap: 13px;
+  }
+}
+
+.carousel__slide {
+  max-width: 100px;
+  height: 100px;
+  width: 100%;
+  flex: 1 0 auto;
+  img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}

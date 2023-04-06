@@ -1,0 +1,67 @@
+// шапка
+header.header
+    .header-top
+        .header-top__wrapper._container
+            a.header-top__item.header-top__location(href="#")
+                img(src="images/dest/vector/near_me.svg", alt="Местоположение")
+                span Курская область, Пристенский район, село Красниково
+            .header-top__item.header-top__phone
+                a(href="tel:+79991234567")
+                    img(src="images/dest/vector/phonelink_ring.svg", alt="Сделать звонок")
+                    span +7 999 123 45 67
+            .header-top__item.header-top__visible
+                img(src="images/dest/vector/visibility.svg", alt="")
+            button.header-top__item.header-top__language
+                img(src="images/dest/vector/language.svg", alt="Выбор языка")
+                span RU
+    .header-menu
+        .header-menu__wrapper._container
+            a(href="/").logo
+                img(src="images/dest/vector/logo.svg", alt="")
+            // меню в шапке
+            .top_menu
+                ul.main-nav
+
+                    li.item
+                        a(href='o-complekse.html')
+                            span О комплексе
+                    li.item
+                        a
+                            span Локации
+                            img(src="images/dest/vector/arrow_drop_down.svg", alt="")
+                        .main-nav__submenu-wrapper
+                            .main-nav__submenu
+                                a(href="alleya-melnic.html") Аллея мельниц
+                                a(href="etnograficheskiy-park.html") Этнографический парк
+                                a(href="otdyh-vsey-semyey.html") Отдых всей семьи
+                    li.item
+                        a(href='contacts.html')
+                            span Контакты
+                    li.item
+                        a(href='carta-putishestviy.html')
+                            span Карта путешествий
+                    li.item
+                        a(href='events.html')
+                            span Мероприятия
+                    li.item
+                        a(href='news.html')
+                            span Новости
+                    li.item
+                        a(href='#')
+                            span Интернет-магазин
+                    li.dd_menu
+                        button.dropdown-toggle(type='button') ещё
+                        .main-nav__submenu-wrapper
+                            ul.main-nav__submenu
+
+            a.button-default.header-menu__feedback Обратный звонок
+
+            // бургер
+            button.header-menu__burger.burger#burger
+                span
+                span
+
+            // меню
+            include menu.pug
+    include modal2
+    include modal3

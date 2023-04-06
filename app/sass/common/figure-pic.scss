@@ -1,0 +1,56 @@
+.figure-pic {
+    position: relative;
+}
+
+.figure-pic__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    // width: 830px;
+    height: 620px;
+    img {
+        object-fit: cover;
+        border: 4px solid #A48659;
+        width: 50%;
+    }
+    img:first-child {
+        border-radius: 200px 0px 0px 16px;
+        @media (max-width: 767px) {
+            border-radius: 100px 0 0 16px;
+        }
+    }
+    img:last-child {
+        border-radius: 0 16px 200px 0;
+        @media (max-width: 767px) {
+            border-radius: 0 16px 100px 0;
+        }
+    }
+    @media (max-width: 1919px) {
+        height: 490px;
+    }
+    @media (max-width: 767px) {
+        height: 240px;
+        width: calc(100% - 10px);
+    }
+    &--one {
+        width: 100%;
+        img:last-child {
+            width: 100%;
+            border-radius: 200px 16px;
+            @media (max-width: 767px) {
+                border-radius: 100px 16px;
+            }
+        }
+    }
+}
+
+.obvodka {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    object-fit: contain !important;
+    border-radius: 0 !important;
+}

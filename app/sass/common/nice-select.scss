@@ -1,0 +1,38 @@
+.nice-select {
+  // background-color: #603a0a;
+  .current {
+    // color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .list {
+    box-shadow: 0px 4px 20px rgba(69, 46, 17, 0.2);
+    border-radius: 16px;
+    background-color: #fff;
+    min-width: 300px;
+    margin-top: 20px;
+    .option {
+        color: #494843;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 44px;
+        border-bottom: 1px solid rgba(218, 218, 218, 0.4);
+        text-transform: uppercase;
+        &.focus {
+            background-color: transparent;
+            color: #A48659;
+        }
+        &:hover {
+            background-color: transparent;
+            color: #A48659;
+        }
+    }
+    @media (max-width: 767px) {
+        min-width: 100%;
+    }
+  }
+  @media (max-width: 767px) {
+    text-align: center !important;
+  }
+}

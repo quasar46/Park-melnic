@@ -1,0 +1,52 @@
+.header-top {
+    background-color: #603A0A;
+}
+
+.header-top__wrapper {
+    display: flex;
+    align-items: center;
+    height: 44px;
+}
+
+.header-top__item {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    @media (max-width: 1279px) {
+        font-size: 14px;
+    }
+    img {
+        margin-right: 8px;
+    }
+    a {
+        display: flex;
+        align-items: center;
+        color: inherit;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+.header-top__location {
+    @media (max-width: 1279px) {
+        display: none;
+    }
+}
+
+.header-top__phone {
+    margin-left: auto;
+    margin-right: 50px;
+    @media (max-width: 767px) {
+        margin-left: 0;
+    }
+}
+
+.header-top__visible {
+    margin-right: 30px;
+    @media (max-width: 767px) {
+        margin-left: auto;
+    }
+}

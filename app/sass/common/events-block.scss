@@ -1,0 +1,23 @@
+.events-block__wrapper {
+    .swiper-slide {
+        box-shadow: 0px 4px 6px rgba(69, 46, 17, 0.12);
+        border-radius: 16px;
+        border:1px solid transparent;
+        overflow: hidden;
+        width: 400px;
+        @media (max-width: 1919px) {
+            width: 352px;
+        }
+        @media (max-width: 1279px) {
+            width: 334px;
+        }
+        @media (max-width: 767px) {
+            width: 330px;
+        }
+    }
+    .swiper-nav {
+        @media (max-width: 1279px) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.single-picture {
+    img {
+        border-radius: 16px;
+        height: 600px;
+        width: 100%;;
+        object-fit: cover;
+        @media (max-width: 1919px) {
+            height: 500px;
+        }
+        @media (max-width: 1279px) {
+            height: 360px;
+        }
+    }
+}

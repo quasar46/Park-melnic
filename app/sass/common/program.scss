@@ -1,0 +1,30 @@
+.program {
+
+}
+
+.program__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1B1706;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.program__text {
+    font-size: 24px;
+    font-weight: 600;
+    color: #A48659;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.program__date {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #A48659;
+    img {
+        margin-right: 20px;
+    }
+}

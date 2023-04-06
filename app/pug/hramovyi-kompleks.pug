@@ -1,0 +1,226 @@
+extends base.pug
+block page
+    .breadcrumbs._container
+        .breadcrumbs__wrapper
+            a(href="/") Главная
+            img(src="images/dest/vector/arrow-breadcrumbs.svg" alt="")
+            a(href="") Этнографический парк
+            img(src="images/dest/vector/arrow-breadcrumbs.svg" alt="")
+            a.active Храмовый комплекс
+        .breadcrumbs__mobile
+            a(href="/")
+                img(src="images/dest/vector/arrow-breadcrumbs-mobile.svg" alt="")
+                span Назад
+
+    h1.title-page._container
+        span Храмовый комплекс
+        img(src="images/dest/vector/two-lines.svg" alt="")
+
+    section._container
+
+        .swiper-banner
+            .swiper-wrapper
+                .swiper-slide
+                    img(src="images/dest/banners/banner2.jpg" alt="")
+                .swiper-slide
+                    img(src="images/dest/banners/banner2.jpg" alt="")
+                .swiper-slide
+                    img(src="images/dest/banners/banner2.jpg" alt="")
+                .swiper-slide
+                    img(src="images/dest/banners/banner2.jpg" alt="")
+            .swiper-nav.swiper-nav__banner
+                button.swiper-button.swiper-button--white.swiper-button-prev
+                    <svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66484e-07 11L4.66487e-07 10.9999C5.10329e-07 9.99691 5.39208e-07 9.33623 1.2 9.1999C3.78892 8.90579 6.6 5.4682 6.6 2.15615L6.6 1.55615C6.6 0.893414 7.13726 0.356156 7.8 0.356156L9 0.356156C9.66274 0.356156 10.2 0.893414 10.2 1.55615L10.2 2.15616C10.2 4.67257 9.29763 7.02575 7.78568 8.78796C7.54565 9.06773 7.33334 9.3717 7.18196 9.70781L7.17078 9.73264C6.80729 10.5397 6.80152 11.4627 7.15489 12.2742C7.30624 12.6218 7.5235 12.9354 7.77102 13.2225C9.29182 14.9866 10.2 17.3471 10.2 19.8719L10.2 20.4719C10.2 21.1346 9.66274 21.6719 9 21.6719L7.8 21.6719C7.13726 21.6719 6.6 21.1346 6.6 20.4719L6.6 19.8719C6.6 16.559 3.78849 13.0935 1.2 12.7999C3.93755e-07 12.6638 4.2602e-07 11.9257 4.66484e-07 11Z" fill="white"/></svg>
+                button.swiper-button.swiper-button--white.swiper-button-next
+                    <svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 11L11 10.9999C11 9.99691 11 9.33623 9.8 9.1999C7.21108 8.90579 4.4 5.4682 4.4 2.15615L4.4 1.55615C4.4 0.893414 3.86274 0.356156 3.2 0.356156L2 0.356156C1.33726 0.356156 0.800001 0.893414 0.800001 1.55615L0.800001 2.15616C0.800001 4.67257 1.70237 7.02575 3.21432 8.78796C3.45435 9.06773 3.66666 9.3717 3.81804 9.70781L3.82922 9.73264C4.19271 10.5397 4.19848 11.4627 3.84511 12.2742C3.69376 12.6218 3.4765 12.9354 3.22898 13.2225C1.70818 14.9866 0.8 17.3471 0.8 19.8719L0.8 20.4719C0.8 21.1346 1.33726 21.6719 2 21.6719L3.2 21.6719C3.86274 21.6719 4.4 21.1346 4.4 20.4719L4.4 19.8719C4.4 16.559 7.21151 13.0935 9.8 12.7999C11 12.6638 11 11.9257 11 11Z" fill="white"/></svg>
+        a.order-btn#order-btn
+            img(src="images/dest/order-btn.png", alt="")
+
+    section.block-image._container
+        .block-image__content
+            p.block-image__descr Тут краткая суть. А также непосредственные участники технического прогресса, инициированные исключительно синтетически, указаны как претенденты на роль ключевых факторов.
+            p.block-image__text Текст про экскурсии — это «рыба». Он находится рядом с объектом культурного наследия регионального значения — водяной мельницей начала XVIII века. Также в деревне также будут площади под открытым небом для проведения фестивалей. Всё благоустроят, используя дерево, камень и озеленение, как у естественного луга. Детские площадки также оформят в традициях края — с росписями и мотивами кожлянской игрушки.
+            .block-image__pic.block-image__pic--mobile
+                .figure-pic
+                    .figure-pic__wrapper
+                        img(src="images/dest/image77.jpg", alt="")
+                        img(src="images/dest/image132.jpg", alt="")
+                    .border.border-2
+        .block-image__pic
+            .figure-pic
+                .figure-pic__wrapper
+                    img(src="images/dest/image77.jpg", alt="")
+                    img(src="images/dest/image132.jpg", alt="")
+                .border.border-2
+
+    section.thumbs-block
+        ._container
+            h2.title-inner Галлерея
+        ._container
+            .swiper-container.gallery-top._container
+                .swiper-wrapper
+                    .swiper-slide
+                        .border
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        .border
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        .border
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        .border
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        .border
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        .border
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        .border
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        .border
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        .border
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        .border
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        .border
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        .border
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        .border
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        .border
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        .border
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        .border
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        .border
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        .border
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        .border
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        .border
+                        img(src="images/dest/image77.jpg" alt="")
+
+            .swiper-container.gallery-thumbs
+                .swiper-wrapper
+                    .swiper-slide
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        img(src="images/dest/image77.jpg" alt="")
+                    .swiper-slide
+                        img(src="images/dest/image77.jpg" alt="")
+                .swiper-nav.swiper-nav__gallery
+                    button.swiper-button.swiper-button-prev2
+                        <svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66484e-07 11L4.66487e-07 10.9999C5.10329e-07 9.99691 5.39208e-07 9.33623 1.2 9.1999C3.78892 8.90579 6.6 5.4682 6.6 2.15615L6.6 1.55615C6.6 0.893414 7.13726 0.356156 7.8 0.356156L9 0.356156C9.66274 0.356156 10.2 0.893414 10.2 1.55615L10.2 2.15616C10.2 4.67257 9.29763 7.02575 7.78568 8.78796C7.54565 9.06773 7.33334 9.3717 7.18196 9.70781L7.17078 9.73264C6.80729 10.5397 6.80152 11.4627 7.15489 12.2742C7.30624 12.6218 7.5235 12.9354 7.77102 13.2225C9.29182 14.9866 10.2 17.3471 10.2 19.8719L10.2 20.4719C10.2 21.1346 9.66274 21.6719 9 21.6719L7.8 21.6719C7.13726 21.6719 6.6 21.1346 6.6 20.4719L6.6 19.8719C6.6 16.559 3.78849 13.0935 1.2 12.7999C3.93755e-07 12.6638 4.2602e-07 11.9257 4.66484e-07 11Z" fill="white"/></svg>
+                    button.swiper-button.swiper-button-next2
+                        <svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 11L11 10.9999C11 9.99691 11 9.33623 9.8 9.1999C7.21108 8.90579 4.4 5.4682 4.4 2.15615L4.4 1.55615C4.4 0.893414 3.86274 0.356156 3.2 0.356156L2 0.356156C1.33726 0.356156 0.800001 0.893414 0.800001 1.55615L0.800001 2.15616C0.800001 4.67257 1.70237 7.02575 3.21432 8.78796C3.45435 9.06773 3.66666 9.3717 3.81804 9.70781L3.82922 9.73264C4.19271 10.5397 4.19848 11.4627 3.84511 12.2742C3.69376 12.6218 3.4765 12.9354 3.22898 13.2225C1.70818 14.9866 0.8 17.3471 0.8 19.8719L0.8 20.4719C0.8 21.1346 1.33726 21.6719 2 21.6719L3.2 21.6719C3.86274 21.6719 4.4 21.1346 4.4 20.4719L4.4 19.8719C4.4 16.559 7.21151 13.0935 9.8 12.7999C11 12.6638 11 11.9257 11 11Z" fill="white"/></svg>
+
+        .carousel._container
+            .carousel__slide
+                a(href="../images/dest/image77.jpg" data-fancybox="gallery")
+                    img(src="images/dest/image77.jpg", alt="")
+            .carousel__slide
+                a(href="../images/dest/image77.jpg" data-fancybox="gallery")
+                    img(src="images/dest/image77.jpg", alt="")
+            .carousel__slide
+                a(href="../images/dest/image77.jpg" data-fancybox="gallery")
+                    img(src="images/dest/image77.jpg", alt="")
+            .carousel__slide
+                a(href="../images/dest/image77.jpg" data-fancybox="gallery")
+                    img(src="images/dest/image77.jpg", alt="")
+            .carousel__slide
+                a(href="../images/dest/image77.jpg" data-fancybox="gallery")
+                    img(src="images/dest/image77.jpg", alt="")
+            .carousel__slide
+                a(href="../images/dest/image77.jpg" data-fancybox="gallery")
+                    img(src="images/dest/image77.jpg", alt="")
+            .carousel__slide
+                a(href="../images/dest/image77.jpg" data-fancybox="gallery")
+                    img(src="images/dest/image77.jpg", alt="")
+
+    section.about-place._container
+        h2.title-inner Подробнее о месте
+
+        include modules/pleer
+
+        p.about-place__strong Прежде всего, сложившаяся структура организации требует определения и уточнения как самодостаточных, так и внешне зависимых концептуальных решений.
+        img(src="images/dest/image77.jpg", alt="")
+        p.about-place__strong Задача организации, в особенности же современная методология разработки способствует подготовке и реализации первоочередных требований.
+        p Не следует, однако, забывать, что консультация с широким активом позволяет выполнить важные задания по разработке поэтапного и последовательного развития общества. Картельные сговоры не допускают ситуации, при которой базовые сценарии поведения пользователей, превозмогая сложившуюся непростую экономическую ситуацию, заблокированы в рамках своих собственных рациональных ограничений. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: понимание сути ресурсосберегающих технологий способствует повышению качества экономической целесообразности принимаемых решений.
+        img(src="images/dest/image77.jpg", alt="")
+        p Мы вынуждены отталкиваться от того, что консультация с широким активом влечет за собой процесс внедрения и модернизации поставленных обществом задач. Также как убеждённость некоторых оппонентов влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что синтетическое тестирование говорит о возможностях поставленных обществом задач.
+
+        .share
+            span Поделиться:
+            .share__links
+                a(href="")
+                    img(src="images/dest/vector/vk-icn.svg", alt="")
+                a(href="")
+                    img(src="images/dest/vector/ok-icn.svg", alt="")
+
+    section.order._container
+        .order__wrapper
+            h2.title-inner Заказать <i class="br"></i> экскурсию
+            form(action="")
+                input(type="text" placeholder="Имя")
+                input(type="text" placeholder="Телефон")
+                p Нажимая кнопку отправить вы подтверждаете своё согласие на обработку <a href="">персональных данных</a>
+                button(type="submit").button-default
+                    span Отправить
+                    img(src="images/dest/vector/arrow-btn.svg", alt="")
+            .border.border--order
+
+    include modules/modal

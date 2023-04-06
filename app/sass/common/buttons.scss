@@ -1,0 +1,63 @@
+.button-default {
+  height: 48px;
+  background-color: #603a0a;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0 24px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  img:last-child{
+    margin-left: 10px;
+  }
+  img:first-child {
+    margin-right: 10px;
+  }
+  &:hover {
+    background-color: #a48659;
+    transition: 0.3s all;
+  }
+  &:active {
+    background-color: #d0c5a3;
+  }
+  &--white {
+    background-color: transparent;
+    border: 2px solid #603a0a;
+    color: #603a0a;
+    &:hover {
+      color: #A48659;
+      border-color: #A48659;
+      background-color: transparent;
+      transition: 0.3s all;
+    }
+    &:active {
+      color: #D0C5A3;
+      border-color: #D0C5A3;
+      background-color: transparent;
+    }
+  }
+  @media (max-width: 1279px) {
+    height: 40px;
+    font-size: 13px;
+  }
+}
+
+.order-btn {
+  position: fixed;
+  z-index: 100;
+  width: 200px;
+  height: 200px;
+  bottom: 5%;
+  right: 5%;
+  z-index: 100;
+  display: block;
+  @media (max-width: 1279px) {
+    width: 114px;
+    height: 114px;
+    margin-top: -57px;
+  }
+}

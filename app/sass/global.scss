@@ -1,0 +1,143 @@
+@import "../../node_modules/normalize.css/normalize";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import "./fonts/stylesheet.css";
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  line-height: 1.2;
+  font-size: 16px;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #fcfaf8;
+}
+
+body.hidden {
+  overflow: hidden;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  margin-bottom: 160px;
+  @media (max-width: 380px) {
+    margin-bottom: 80px;
+  }
+}
+
+.page {
+  position: relative;
+  flex: 1 1 auto;
+}
+
+._container {
+  position: relative;
+  max-width: 1920px;
+  width: 100%;
+  padding: 0 120px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  @media (max-width: 1919px) {
+    padding: 0 80px;
+  }
+  @media (max-width: 1279px) {
+    padding: 0 40px;
+  }
+  @media (max-width: 767px) {
+    padding: 0 20px;
+  }
+}
+
+._container-small {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  @media (max-width: 1919px) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  @media (max-width: 1279px) {
+    padding: 0 40px;
+  }
+  @media (max-width: 767px) {
+    padding: 0 20px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: #494843;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  @media (max-width: 1279px) {
+    font-size: 16px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: inherit;
+  font-size: inherit;
+  margin: 0;
+  font-family: Marker-Felt;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+._ibg {
+  position: relative;
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}

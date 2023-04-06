@@ -1,0 +1,18 @@
+File from: [app/images/src/banners/banner1.png]
+
+File to: [app/images/dest/banners/banner1.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: /home/freed/projects/park-melnic/node_modules/pngquant-bin/vendor/pngquant --quality=75-100 -o app/images/dest/banners/banner1.png app/images/src/banners/banner1.png
+  error: Not a PNG file (libpng failed)
+  error: cannot decode image banner1.png
+File from: [app/images/src/banners/banner2.png]
+
+File to: [app/images/dest/banners/banner2.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: /home/freed/projects/park-melnic/node_modules/pngquant-bin/vendor/pngquant --quality=75-100 -o app/images/dest/banners/banner2.png app/images/src/banners/banner2.png
+  error: Not a PNG file (libpng failed)
+  error: cannot decode image banner2.png

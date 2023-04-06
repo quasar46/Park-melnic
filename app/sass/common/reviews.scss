@@ -1,0 +1,23 @@
+.reviews__text {
+  font-size: 20px;
+  font-weight: 400;
+  color: #1b1706;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+
+.reviews__name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #603a0a;
+  margin-bottom: 10px;
+}
+
+.reviews__date {
+  font-size: 16px;
+  font-weight: 600;
+  color: #a48659;
+}

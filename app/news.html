@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/fonts/stylesheet.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- шапка-->
+      <header class="header">
+        <div class="header-top">
+          <div class="header-top__wrapper _container"><a class="header-top__item header-top__location" href="#"><img src="images/dest/vector/near_me.svg" alt="Местоположение"><span>Курская область, Пристенский район, село Красниково</span></a>
+            <div class="header-top__item header-top__phone"><a href="tel:+79991234567"><img src="images/dest/vector/phonelink_ring.svg" alt="Сделать звонок"><span>+7 999 123 45 67</span></a></div>
+            <div class="header-top__item header-top__visible"><img src="images/dest/vector/visibility.svg" alt=""></div>
+            <button class="header-top__item header-top__language"><img src="images/dest/vector/language.svg" alt="Выбор языка"><span>RU</span></button>
+          </div>
+        </div>
+        <div class="header-menu">
+          <div class="header-menu__wrapper _container"><a class="logo" href="/"><img src="images/dest/vector/logo.svg" alt=""></a>
+            <!-- меню в шапке-->
+            <div class="top_menu">
+              <ul class="main-nav">
+                <li class="item"><a href="o-complekse.html"><span>О комплексе</span></a></li>
+                <li class="item"><a><span>Локации</span><img src="images/dest/vector/arrow_drop_down.svg" alt=""></a>
+                  <div class="main-nav__submenu-wrapper">
+                    <div class="main-nav__submenu"><a href="alleya-melnic.html">Аллея мельниц</a><a href="etnograficheskiy-park.html">Этнографический парк</a><a href="otdyh-vsey-semyey.html">Отдых всей семьи</a></div>
+                  </div>
+                </li>
+                <li class="item"><a href="contacts.html"><span>Контакты</span></a></li>
+                <li class="item"><a href="carta-putishestviy.html"><span>Карта путешествий</span></a></li>
+                <li class="item"><a href="events.html"><span>Мероприятия</span></a></li>
+                <li class="item"><a href="news.html"><span>Новости</span></a></li>
+                <li class="item"><a href="#"><span>Интернет-магазин</span></a></li>
+                <li class="dd_menu">
+                  <button class="dropdown-toggle" type="button">ещё</button>
+                  <div class="main-nav__submenu-wrapper">
+                    <ul class="main-nav__submenu"></ul>
+                  </div>
+                </li>
+              </ul>
+            </div><a class="button-default header-menu__feedback">Обратный звонок</a>
+            <!-- бургер-->
+            <button class="header-menu__burger burger" id="burger"><span></span><span></span></button>
+            <!-- меню-->
+            <div class="menu">
+              <div class="menu__wrapper"><a href="o-complekse.html"><span>О комплексе</span></a><a><span>Локации</span><svg width="18" height="9" viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 9L0 0H18L9 9Z" fill="#2E0800"/></svg></a>
+                <div class="submenu"><a href="alleya-melnic.html"><span>Аллея мельниц</span></a><a href="etnograficheskiy-park.html"><span>Этнографический парк</span></a><a href="otdyh-vsey-semyey.html"><span>Отдых всей семьи</span></a></div><a href="contacts.html"><span>Контакты</span></a><a href="carta-putishestviy.html"><span>Карта путешествий</span></a><a href="events.html"><span>Мероприятия</span></a><a href="news.html"><span>Новости</span></a><a href=""><span>Интернет-магазин</span></a>
+              </div>
+              <button class="button-default menu__button">Обратный звонок</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="feedback">
+          <div class="modal__wrapper">
+            <h2 class="modal__title">Обратный звонок</h2>
+            <form class="modal__form" action="">
+              <input type="name" placeholder="Имя">
+              <input type="tel" placeholder="Телефон">
+            </form>
+            <div class="modal__concenst">Нажимая кнопку отправить вы подтверждаете своё согласие на обработку &nbsp;<a href="">персональных данных</a></div>
+            <button class="button-default" type="submit"><span>Отправить</span><img src="images/dest/vector/arrow-btn.svg" alt=""></button>
+            <button class="modal__close"></button>
+          </div>
+        </div>
+        <div class="modal" id="submit">
+          <div class="modal__wrapper"><img src="images/dest/vector/line.svg" alt="">
+            <div class="modal__inner">
+              <h2 class="modal__title">Ваша заявка принята</h2>
+              <div>В скором времени с вами свяжется наш сотрудник</div>
+            </div><img src="images/dest/vector/line.svg" alt="">
+          </div>
+        </div>
+      </header>
+      <div class="page">
+        <div class="breadcrumbs _container">
+          <div class="breadcrumbs__wrapper"><a href="/">Главная</a><img src="images/dest/vector/arrow-breadcrumbs.svg" alt=""><a class="active">Новости</a></div>
+          <div class="breadcrumbs__mobile"><a href="/"><img src="images/dest/vector/arrow-breadcrumbs-mobile.svg" alt=""><span>Назад</span></a></div>
+        </div>
+        <section class="news _container">
+          <h1 class="title-page"><span>Новости</span><img src="images/dest/vector/two-lines.svg"></h1>
+          <div class="select"><span>Показать новости</span>
+            <select class="select__options select__options--white button-default button-default--white">
+              <option value="">Сначала новые</option>
+              <option value="">Сначала новые</option>
+              <option value="">Сначала новые</option>
+            </select>
+          </div>
+          <div class="news__wrapper items-more"><a class="news__item" href="new.html"><img class="news__picture" src="images/dest/news/item1.jpg" alt="">
+              <date class="news__date"><img src="images/dest/vector/date_range2.svg" alt=""><span>25 января 2022</span></date>
+              <div class="news__title">Туроператорам региона предложено включить данный объект в действующий экскурсионный маршрут</div>
+              <p class="news__text">Сейчас идет ремонт одного из объектов культурного наследия нашего края - уникальной водяной мельницы в деревне Красниково Пристенского района. Единственная сохранившаяся в Черноземье мельница была построена в XVIII веке без единого гвоздя.</p></a><a class="news__item" href="new.html"><img class="news__picture" src="images/dest/news/item1.jpg" alt="">
+              <date class="news__date"><img src="images/dest/vector/date_range2.svg" alt=""><span>25 января 2022</span></date>
+              <div class="news__title">Туроператорам региона предложено включить данный объект в действующий экскурсионный маршрут</div>
+              <p class="news__text">Сейчас идет ремонт одного из объектов культурного наследия нашего края - уникальной водяной мельницы в деревне Красниково Пристенского района. Единственная сохранившаяся в Черноземье мельница была построена в XVIII веке без единого гвоздя.</p></a><a class="news__item" href="new.html"><img class="news__picture" src="images/dest/news/item1.jpg" alt="">
+              <date class="news__date"><img src="images/dest/vector/date_range2.svg" alt=""><span>25 января 2022</span></date>
+              <div class="news__title">Туроператорам региона предложено включить данный объект в действующий экскурсионный маршрут</div>
+              <p class="news__text">Сейчас идет ремонт одного из объектов культурного наследия нашего края - уникальной водяной мельницы в деревне Красниково Пристенского района. Единственная сохранившаяся в Черноземье мельница была построена в XVIII веке без единого гвоздя.</p></a><a class="news__item" href="new.html"><img class="news__picture" src="images/dest/news/item1.jpg" alt="">
+              <date class="news__date"><img src="images/dest/vector/date_range2.svg" alt=""><span>25 января 2022</span></date>
+              <div class="news__title">Туроператорам региона предложено включить данный объект в действующий экскурсионный маршрут</div>
+              <p class="news__text">Сейчас идет ремонт одного из объектов культурного наследия нашего края - уникальной водяной мельницы в деревне Красниково Пристенского района. Единственная сохранившаяся в Черноземье мельница была построена в XVIII веке без единого гвоздя.</p></a></div>
+          <button class="button-default show-more">Загрузить ещё</button>
+        </section>
+      </div>
+      <!-- подвал-->
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-top__wrapper _container">
+            <div class="footer-top__col col1"><a class="logo footer__logo" href="/"><img src="images/dest/vector/logo-white.svg"></a>
+              <div class="footer-top__item footer-top__phone"><a href="+79991234567"><img src="images/dest/vector/phonelink_ring.svg" alt="Сделать звонок"><span>+7 999 123 45 67</span></a></div>
+              <div class="footer-top__item footer-top__mail"><a href="mailto:unreal@mail.ru"><img src="images/dest/vector/light-alternate_email.svg"><span>unreal@mail.ru</span></a></div>
+              <div class="footer-top__item footer-top__location"><a href=""><img src="images/dest/vector/near_me.svg"><span>Курская область, Пристенский <i class="br"></i> район, село Красниково</span></a></div>
+            </div>
+            <div class="footer-top__col col2"><span class="footer-top__title">О комплексе</span>
+              <ul class="footer-top__links">
+                <li><a href="">Информация</a></li>
+                <li><a href="">Новости</a></li>
+                <li><a href="">Локации</a></li>
+                <li><a href="">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer-top__col col3"><span class="footer-top__title">Посетителям</span>
+              <ul class="footer-top__links">
+                <li><a href="">Экскурсии</a></li>
+                <li><a href="">3D тур</a></li>
+                <li><a href="">Карта путешествий</a></li>
+              </ul>
+            </div>
+            <div class="footer-top__col footer-top__social col4"><a href=""><img src="images/dest/vector/icon-ok.svg"></a><a href=""><img src="images/dest/vector/icon-vk.svg"></a><a href=""><img src="images/dest/vector/icon-rutube.svg"></a></div>
+            <div class="footer-top__col footer-top__info col5"><span>&copy; Парк мельниц 2022</span><a href="">Политика конфиденциальности</a><a href="">Обработка персональных данных</a></div>
+            <div class="footer-top__col footer-top__info col6"><span>Создание сайта &nbsp;<a href="https://kvokka.com/">kvokka.com</a></span><span>3D визуализация &nbsp;<a href="3d-studio.su">3d-studio.su</a></span></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.nice-select.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=&lt;ваш API-ключ&gt;"></script>
+    <script src="js/geoobject_contextmenu.js"></script>
+    <script src="js/geoobject_contextmenu2.js"></script>
+    <script src="js/pleer.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

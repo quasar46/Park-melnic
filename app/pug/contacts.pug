@@ -1,0 +1,72 @@
+extends base.pug
+block page
+    .breadcrumbs._container
+        .breadcrumbs__wrapper
+            a(href="/") Главная
+            img(src="images/dest/vector/arrow-breadcrumbs.svg" alt="")
+            a.active Контакты
+        .breadcrumbs__mobile
+            a(href="/")
+                img(src="images/dest/vector/arrow-breadcrumbs-mobile.svg" alt="")
+                span Назад
+
+    section.contacts._container
+        h1.title-page
+            span Контакты
+            img(src="images/dest/vector/two-lines.svg")
+        .contacts__wrapper
+            .contacts__address.contacts-address
+                .contacts-address__item
+                    .contacts-address__head
+                        img(src="images/dest/vector/near_me2.svg", alt="")
+                        span Адрес
+                    span.contacts-address__title Комплекс
+                    span.contacts-address__text Курская область, Пристенский район, село Красниково
+                    span.contacts-address__title Администрация
+                    span.contacts-address__text 305000, Россия, г. Курск, ул. Луначарского, 6
+                .contacts-address__item
+                    .contacts-address__head
+                        img(src="images/dest/vector/phonelink_ring2.svg", alt="")
+                        span Телефон
+                    span.contacts-address__title Администрация комплекса
+                    a(href="tel:+79991234567").contacts-address__text +7 999 123 45 67
+                    span.contacts-address__title Заказ экскурсий
+                    a(href="tel:+79991234567").contacts-address__text +7 999 123 45 67
+                .contacts-address__item
+                    .contacts-address__head
+                        img(src="images/dest/vector/date_range.svg", alt="")
+                        span Время работы
+                    span.contacts-address__text Среда, Четверг, Пятница с 10.00 до 16.30
+                    span.contacts-address__text Суббота, Воскресенье — С 10.00 до 16.30
+                    span.contacts-address__text Понедельник,Вторник — выходные дни
+                .contacts-address__item
+                    .contacts-address__head
+                        img(src="images/dest/vector/alternate_email.svg", alt="")
+                        span Email
+                    a(href="mailto:unreal@mail.ru").contacts-address__text unreal@mail.ru
+                    .contacts-address__head
+                        img(src="images/dest/vector/language2.svg", alt="")
+                        span Курский областной краеведческий музей
+                    a(href="http://kursk-museum.ru/").contacts-address__text http://kursk-museum.ru/
+
+    section.way._container
+        h2.title-inner Как добраться
+        .way__wrapper
+            .way__content
+                p Текстовое описание того как добраться: кстати, сделанные на базе интернет-аналитики выводы призывают нас к новым свершениям, которые, в свою очередь, должны быть разоблачены. Следует отметить, что убеждённость некоторых оппонентов способствует подготовке и реализации стандартных подходов.
+                p Разнообразный и богатый опыт говорит нам, что выбранный нами инновационный путь не даёт нам иного выбора, кроме определения поставленных обществом задач. Повседневная практика показывает, что консультация с широким активом создаёт предпосылки для новых принципов формирования материально-технической и кадровой базы.
+                .way__buttons
+                    a(href="")
+                        img(src="images/dest/vector/ya-link.svg", alt="")
+                        span Открыть маршрут в Яндекс.Навигаторе
+                    a(href="")
+                        img(src="images/dest/vector/balloon.svg", alt="")
+                        span Маршрут на общественном транспорте
+            .way__map#map
+            .way__buttons.way__buttons--mobile
+                    a(href="")
+                        img(src="images/dest/vector/ya-link.svg", alt="")
+                        span Открыть маршрут в Яндекс.Навигаторе
+                    a(href="")
+                        img(src="images/dest/vector/balloon.svg", alt="")
+                        span Маршрут на общественном транспорте

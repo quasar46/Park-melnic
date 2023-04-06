@@ -1,0 +1,57 @@
+.simple-banner {
+    img {
+        border-radius: 16px;
+        height: 600px;
+        width: 100%;
+        object-fit: cover;
+        @media (max-width: 1919px) {
+            height: 500px;
+        }
+        @media (max-width: 1279px) {
+            height: 360px;
+        }
+        @media (max-width: 767px) {
+            height: 396px;
+        }
+    }
+}
+
+.simple-banner__content {
+    display: flex;
+    margin-top: 60px;
+    @media (max-width: 1279px) {
+        flex-direction: column;
+    }
+    @media (max-width: 767px) {
+        margin-top: 40px;
+    }
+}
+
+.simple-banner__col {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3);
+    @media (max-width: 1279px) {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.simple-banner__title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1B1706;
+    margin-bottom: 20px;
+    @media (max-width: 767px) {
+        font-size: 32px;
+    }
+}
+
+.simple-banner__text {
+    font-size: 24px;
+    font-weight: 600;
+    color: #494843;
+}

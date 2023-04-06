@@ -1,0 +1,41 @@
+extends base.pug
+block page
+    .breadcrumbs._container
+        .breadcrumbs__wrapper
+            a(href="/") Главная
+            img(src="images/dest/vector/arrow-breadcrumbs.svg" alt="")
+            a.active Карта путешествий
+        .breadcrumbs__mobile
+            a(href="/")
+                img(src="images/dest/vector/arrow-breadcrumbs-mobile.svg" alt="")
+                span Назад
+
+    section
+        h1.title-page.title-page--mode._container
+            span Карта путешествий
+            img(src="images/dest/vector/two-lines.svg" alt="")
+        ._container
+            .map-travel
+                #map2
+                .map-travel__items
+                    a.map-travel__item.goto(shop_id="001")
+                        img(src="images/dest/vector/map-items/item1.svg", alt="")
+                        span.map-travel__name Название
+                    a.map-travel__item.goto(shop_id="002")
+                        img(src="images/dest/vector/map-items/item2.svg", alt="")
+                        span.map-travel__name Название
+                    a.map-travel__item.goto(data-gps_n="51.72742" data-gps_s="36.190659" shop_id="003")
+                        img(src="images/dest/vector/map-items/item3.svg", alt="")
+                        span.map-travel__name Название
+                    a.map-travel__item.goto(data-gps_n="51.727404" data-gps_s="36.192083" shop_id="004")
+                        img(src="images/dest/vector/map-items/item4.svg", alt="")
+                        span.map-travel__name Название
+                    a.map-travel__item.goto(data-gps_n="51.728964" data-gps_s="36.191046" shop_id="005")
+                        img(src="images/dest/vector/map-items/item5.svg", alt="")
+                        span.map-travel__name Название
+                    a.map-travel__item.goto(data-gps_n="51.726545" data-gps_s="36.188497" shop_id="006")
+                        img(src="images/dest/vector/map-items/item6.svg", alt="")
+                        span.map-travel__name Название
+                    a.map-travel__item.goto(data-gps_n="51.654623" data-gps_s="35.684827" shop_id="007")
+                        img(src="images/dest/vector/map-items/item7.svg", alt="")
+                        span.map-travel__name Название
